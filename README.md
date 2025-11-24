@@ -3,7 +3,7 @@ Game name: 19 Benadryls Deep
 Group members: Owen Zhang, Faris Elbanna, Alejandro Alvarado, Nathan Elliot  
 Made using Unity version 2022.3.17f1  
 ### Description  
-Zombie survival 2D game. Player will be in a box-like room and must protect something from zombies which spawn from tunnels.   
+Zombie survival 3D game. Player will be in a box-like room and must protect something from zombies which spawn from tunnels.   
 ### Goals for Each Person  
 Owen Zhang: Level design and asset accumulation  
 Alejandro Alvarado: Zombie  
