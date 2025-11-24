@@ -1,5 +1,5 @@
 ### Information  
-Game name: 19 Benadryls Deep 
+Game name: 19 Benadryls Deep  
 Group members: Owen Zhang, Faris Elbanna, Alejandro Alvarado, Nathan Elliot  
 Made using Unity version 2022.3.17f1  
 ### Description  
