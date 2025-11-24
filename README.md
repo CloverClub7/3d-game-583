@@ -1,12 +1,11 @@
-### Information
-Game name: **game name here!**  
-Group members: Owen Zhang, Faris Elbanna, Alejandro Alvarado**put your names here!**  
+### Information  
+Game name: 19 Benadryls Deep 
+Group members: Owen Zhang, Faris Elbanna, Alejandro Alvarado, Nathan Elliot  
 Made using Unity version 2022.3.17f1  
-### Description
-3D platformer. **detail game description here!**  
+### Description  
+Zombie survival 2D game. Player will be in a box-like room and must protect something from zombies which spawn from tunnels.   
 ### Goals for Each Person  
-**Name: goal/responsibility here!**  
-Owen Zhang: some goal  
-Alejandro Alvarado: Make a solid game the group can proudly say they made.
-
-*ADD TWO SPACES AT END OF LINE FOR LINE BREAK*
+Owen Zhang: Level design and asset accumulation  
+Alejandro Alvarado: Zombie  
+Farris Elbanna: Player movement, attack, and other associated functions  
+Nathan Elliot: Zombie  
