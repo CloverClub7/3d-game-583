@@ -1,3 +1,4 @@
+using System.Xml.Serialization;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -6,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float gravity = -9.81f;
     public float jumpHeight = 1.5f;
+    public int playerHealth = 10;
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -40,5 +42,11 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void takeDamage(int amount)
+    {
+        playerHealth -= amount;
+        Debug.Log("Player has taken damage!");
     }
 }

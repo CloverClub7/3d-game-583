@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -349,6 +349,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShirtlessZombie_BodyParts_FREE 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4320853466960796687, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320853466960796687, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+      propertyPath: m_Constraints
+      value: 84
+      objectReference: {fileID: 0}
     - target: {fileID: 5386771016738173881, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.053
@@ -392,8 +400,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 143670489107152511, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1050651172}
   m_SourcePrefab: {fileID: 100100000, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+--- !u!1 &339309360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 143670489107152511, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+  m_PrefabInstance: {fileID: 339309359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389948406
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +949,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5386771016738173881, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
   m_PrefabInstance: {fileID: 339309359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1050651172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339309360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e381da5703a1e47877b3d7594661b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  moveSpeed: 3.5
+  attackRange: 2
+  damageAmount: 1
+  attackCooldown: 1.5
 --- !u!1001 &1385935889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1066,6 +1099,7 @@ MonoBehaviour:
   moveSpeed: 5
   gravity: -9.81
   jumpHeight: 1.5
+  playerHealth: 10
 --- !u!143 &1739540938
 CharacterController:
   m_ObjectHideFlags: 0
