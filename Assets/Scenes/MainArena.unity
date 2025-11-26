@@ -300,6 +300,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShirtlessZombie_BodyParts_FREE 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4320853466960796687, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320853466960796687, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+      propertyPath: m_Constraints
+      value: 84
+      objectReference: {fileID: 0}
     - target: {fileID: 5386771016738173881, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.053
@@ -343,8 +351,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 143670489107152511, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1050651172}
   m_SourcePrefab: {fileID: 100100000, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+--- !u!1 &339309360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 143670489107152511, guid: 7ce67cd9d5ac55c40a76876bacfef2d9, type: 3}
+  m_PrefabInstance: {fileID: 339309359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389948406
 GameObject:
   m_ObjectHideFlags: 0
