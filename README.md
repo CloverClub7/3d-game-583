@@ -9,3 +9,5 @@ Owen Zhang: Level design and asset accumulation
 Alejandro Alvarado: Miscellanious functions and debugging  
 Farris Elbanna: Player movement, attack, and other associated functions  
 Nathan Elliot: Enemy movement, attack, and other associated functions 
+#### Demo Video
+https://youtu.be/iJEecqfgybI
