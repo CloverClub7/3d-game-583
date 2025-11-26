@@ -77,8 +77,9 @@ GameObject:
   - component: {fileID: 4320853466960796687}
   - component: {fileID: 8359770939293528843}
   - component: {fileID: 2468935005518316914}
+  - component: {fileID: 790622054033010177}
   m_Layer: 0
-  m_Name: ShirtlessZombie_BodyParts_FREE 1
+  m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,6 +199,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
+--- !u!114 &790622054033010177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143670489107152511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e381da5703a1e47877b3d7594661b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  moveSpeed: 3.5
+  attackRange: 2
+  damageAmount: 1
+  attackCooldown: 1.5
 --- !u!1 &410615341581472508
 GameObject:
   m_ObjectHideFlags: 0
