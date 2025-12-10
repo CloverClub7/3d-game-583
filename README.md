@@ -1,7 +1,7 @@
 ### Information  
 Game name: 19 Benadryls Deep  
 Group members: Owen Zhang, Faris Elbanna, Alejandro Alvarado, Nathan Elliot  
-Made using Unity version 2022.3.17f1  
+Made using Unity version ~~2022.3.17f1~~ 6000.2.4f1  
 ### Description  
 Surreal (?) zombie survival 3D game. Player will be in a box-like arena and must protect themselves and an object from zombies coming in through from tunnels. It will be a first person shooter.  
 ### Goals for Each Person  
