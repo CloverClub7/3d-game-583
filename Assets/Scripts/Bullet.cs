@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, lifeTime);
 
         // Play fire sound
-        SoundFXManager.instance.PlaySoundClip(fireSound, transform, soundVolume);
+        SoundFXManager.instance.PlaySoundClip(fireSound, transform, soundVolume / 3);
     }
 
     void OnCollisionEnter(Collision collision)
