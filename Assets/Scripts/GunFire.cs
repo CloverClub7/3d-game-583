@@ -28,6 +28,12 @@ public class GunFire : MonoBehaviour
     private bool isReloading = false;
     private float nextShotTime = 0f;
 
+    [Header("SFX")]
+    public AudioClip reloadSound;
+    private AudioSource gunAudioSource;
+
+    private Animator animator;
+
     void Start()
     {
         currentAmmo = maxAmmo;
@@ -36,6 +42,10 @@ public class GunFire : MonoBehaviour
         {
             ammoUI.UpdateAmmoDisplay(currentAmmo);
         }
+
+        gunAudioSource = GetComponent<AudioSource>();
+
+        animator = GetComponentInParent<Animator>();
     }
 
     void Update()
@@ -122,12 +132,19 @@ public class GunFire : MonoBehaviour
     IEnumerator Reload()
     {
         isReloading = true;
+        animator.SetBool("isReloading", isReloading);
         Debug.Log("Reloading...");
 
-        yield return new WaitForSeconds(reloadTime);
+        // Play reload sound, must follow gun so cannot use SoundFXManager
+        gunAudioSource.clip = reloadSound;
+        gunAudioSource.volume = 1f;
+        gunAudioSource.Play();
 
+        yield return new WaitForSeconds(reloadTime);
+        
         currentAmmo = maxAmmo;
         isReloading = false;
+        animator.SetBool("isReloading", isReloading);
 
         Debug.Log("Reload Complete! Ammo refilled to " + currentAmmo);
 
