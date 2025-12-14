@@ -61,6 +61,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -82,6 +87,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -116,10 +122,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3034536638638609254}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -150,3 +156,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 5
   damage: 2
+  fireSound: {fileID: 8300000, guid: 023efd35b056787ca8dbdb4f4f01a624, type: 3}
+  hitBody1: {fileID: 8300000, guid: b8e95c346a8ddd4cfa04e27eebcf450b, type: 3}
+  hitBody2: {fileID: 8300000, guid: 9fd1a0fd656f835f6aff280644e44277, type: 3}
+  hitConcrete1: {fileID: 8300000, guid: c807e48f593a6fac2a80cfdb7772ff8e, type: 3}
+  hitConcrete2: {fileID: 8300000, guid: 4f0eeb36d1d0b2c12adadc143bef8105, type: 3}
+  hitMetal1: {fileID: 8300000, guid: 40d0534ca73b23083a8b8bca1e622cb3, type: 3}
+  hitMetal2: {fileID: 8300000, guid: 0b153f757519f424d944b5b29ba94810, type: 3}
