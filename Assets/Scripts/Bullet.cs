@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     public AudioClip hitConcrete2;
     public AudioClip hitMetal1;
     public AudioClip hitMetal2;
+    public float soundVolume = 1f;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, lifeTime);
 
         // Play fire sound
-        SoundFXManager.instance.PlaySoundClip(fireSound, transform, 1f);
+        SoundFXManager.instance.PlaySoundClip(fireSound, transform, soundVolume);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -39,11 +40,11 @@ public class Bullet : MonoBehaviour
             int selectSound = Random.Range(0, 2);
             if (selectSound == 0)
             {
-                SoundFXManager.instance.PlaySoundClip(hitBody1, transform, 1f);
+                SoundFXManager.instance.PlaySoundClip(hitBody1, transform, soundVolume);
             }
             else
             {
-                SoundFXManager.instance.PlaySoundClip(hitBody2, transform, 1f);
+                SoundFXManager.instance.PlaySoundClip(hitBody2, transform, soundVolume);
             }
         }
 
@@ -53,11 +54,11 @@ public class Bullet : MonoBehaviour
             int selectSound = Random.Range(0, 2);
             if (selectSound == 0)
             {
-                SoundFXManager.instance.PlaySoundClip(hitConcrete1, transform, 1f);
+                SoundFXManager.instance.PlaySoundClip(hitConcrete1, transform, soundVolume);
             }
             else
             {
-                SoundFXManager.instance.PlaySoundClip(hitConcrete2, transform, 1f);
+                SoundFXManager.instance.PlaySoundClip(hitConcrete2, transform, soundVolume);
             }            
         }
 

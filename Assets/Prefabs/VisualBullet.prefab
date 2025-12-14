@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4439005575305742043}
   - component: {fileID: 4642076878292276453}
   m_Layer: 0
-  m_Name: SimpleBullet
+  m_Name: VisualBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 5
-  damage: 2
+  damage: 0
   fireSound: {fileID: 8300000, guid: 023efd35b056787ca8dbdb4f4f01a624, type: 3}
   hitBody1: {fileID: 8300000, guid: b8e95c346a8ddd4cfa04e27eebcf450b, type: 3}
   hitBody2: {fileID: 8300000, guid: 9fd1a0fd656f835f6aff280644e44277, type: 3}
@@ -163,3 +163,4 @@ MonoBehaviour:
   hitConcrete2: {fileID: 8300000, guid: 4f0eeb36d1d0b2c12adadc143bef8105, type: 3}
   hitMetal1: {fileID: 8300000, guid: 40d0534ca73b23083a8b8bca1e622cb3, type: 3}
   hitMetal2: {fileID: 8300000, guid: 0b153f757519f424d944b5b29ba94810, type: 3}
+  soundVolume: 0
