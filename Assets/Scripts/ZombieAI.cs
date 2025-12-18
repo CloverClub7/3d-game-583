@@ -50,7 +50,7 @@ public class ZombieAI : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (enemyHealth.health <= 0 || playerTransform == null) return;
 

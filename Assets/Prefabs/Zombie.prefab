@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BodyMaterials:
   - {fileID: 2100000, guid: 4cde5aac7288f054380fe768f78a0311, type: 2}
-  eyesGlow: 0
+  eyesGlow: 1
 --- !u!54 &4320853466960796687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -91,7 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8908c5f3be609458a1df2f6a6e38ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
   health: 4
+  spawnedFrom: {fileID: 0}
 --- !u!114 &790622054033010177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  moveSpeed: 1.5
+  moveSpeed: 2.25
   attackRange: 2
   damageAmount: 1
   attackCooldown: 1.5

@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, lifeTime);
 
         // Play fire sound
-        SoundFXManager.instance.PlaySoundClip(fireSound, transform, soundVolume / 3);
+        SoundFXManager.instance.PlaySoundClip(fireSound, transform, soundVolume / 5);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -34,17 +34,17 @@ public class Bullet : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
                 Debug.Log("Enemy hit! Remaining HP: " + enemy.health);
-            }
 
-            // Play body hit sound
-            int selectSound = Random.Range(0, 2);
-            if (selectSound == 0)
-            {
-                SoundFXManager.instance.PlaySoundClip(hitBody1, transform, soundVolume);
-            }
-            else
-            {
-                SoundFXManager.instance.PlaySoundClip(hitBody2, transform, soundVolume);
+                // Play body hit sound
+                int selectSound = Random.Range(0, 2);
+                if (selectSound == 0)
+                {
+                    SoundFXManager.instance.PlaySoundClip(hitBody1, transform, soundVolume);
+                }
+                else
+                {
+                    SoundFXManager.instance.PlaySoundClip(hitBody2, transform, soundVolume);
+                }
             }
         }
 
