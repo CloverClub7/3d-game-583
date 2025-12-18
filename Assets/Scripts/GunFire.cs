@@ -17,6 +17,7 @@ public class GunFire : MonoBehaviour
     [Header("Ammo Settings")]
     public int maxAmmo = 6;
     public float reloadTime = 1.5f;
+    public int damage = 2;
 
     [Header("Fire Rate")]
     public float timeBetweenShots = 0.5f;    // seconds between shots, higher = slower fire rate
@@ -103,6 +104,8 @@ public class GunFire : MonoBehaviour
         {
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
+            Bullet bulletComponent = bullet.GetComponent<Bullet>();
+            bulletComponent.damage = damage;
 
             if (rb != null)
             {

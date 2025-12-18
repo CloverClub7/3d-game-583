@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public float regenRate = 5f;
     public float regenDelay = 3f;
 
-    private float currentHealth;
+    public float currentHealth;
     private float lastHitTime;
     private bool isDead = false;
 

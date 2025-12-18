@@ -163,3 +163,4 @@ MonoBehaviour:
   hitConcrete2: {fileID: 8300000, guid: 4f0eeb36d1d0b2c12adadc143bef8105, type: 3}
   hitMetal1: {fileID: 8300000, guid: 40d0534ca73b23083a8b8bca1e622cb3, type: 3}
   hitMetal2: {fileID: 8300000, guid: 0b153f757519f424d944b5b29ba94810, type: 3}
+  soundVolume: 1.5

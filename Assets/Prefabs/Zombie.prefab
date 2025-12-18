@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BodyMaterials:
   - {fileID: 2100000, guid: 4cde5aac7288f054380fe768f78a0311, type: 2}
-  eyesGlow: 0
+  eyesGlow: 1
 --- !u!54 &4320853466960796687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -91,7 +91,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8908c5f3be609458a1df2f6a6e38ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
   health: 4
+  spawnedFrom: {fileID: 0}
+  zombieHurt1: {fileID: 8300000, guid: 6682acaf65790e1a19697eae25ee1aa2, type: 3}
+  zombieHurt2: {fileID: 8300000, guid: 87a738189371c7429bc5bf2fa0fed07d, type: 3}
+  zombieHurt3: {fileID: 8300000, guid: 92f17cd477c06c982a196f1a92f4b391, type: 3}
+  zombieHurt4: {fileID: 8300000, guid: 075207c6d393c65d3b9d200cd9483830, type: 3}
+  zombieHurt5: {fileID: 8300000, guid: 83a753ee213142a54a69d3c82dc45839, type: 3}
+  zombieHurt6: {fileID: 8300000, guid: 0200426d57522ecabbe0a0cc47820557, type: 3}
+  soundVolume: 1
 --- !u!114 &790622054033010177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,10 +114,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  moveSpeed: 1.5
+  moveSpeed: 2.25
   attackRange: 2
   damageAmount: 1
   attackCooldown: 1.5
+  attack1: {fileID: 8300000, guid: 321698a69c98e5d538362e6716ed3d45, type: 3}
+  attack2: {fileID: 8300000, guid: 1ad22757702fbccd6ac6059bbfd8ab37, type: 3}
+  attack3: {fileID: 8300000, guid: 809b1479d2a39941487509e28f2d2e98, type: 3}
 --- !u!136 &6572188006439579722
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -128,10 +140,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.20436059
+  m_Radius: 0.26950008
   m_Height: 1.7433753
   m_Direction: 1
-  m_Center: {x: 0.013922349, y: 0.8605535, z: 0}
+  m_Center: {x: 0.013922334, y: 0.8605535, z: 0.033360004}
 --- !u!1001 &4398475556284360291
 PrefabInstance:
   m_ObjectHideFlags: 0

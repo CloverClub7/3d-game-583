@@ -15,6 +15,11 @@ public class ZombieAI : MonoBehaviour
     public int damageAmount = 1;
     public float attackCooldown = 1.5f;
 
+    [Header("Sounds")]
+    public AudioClip attack1;
+    public AudioClip attack2;
+    public AudioClip attack3;
+
     private Rigidbody rb;
     private EnemyHealth enemyHealth;
     private PlayerHealth playerHealth;
@@ -50,7 +55,7 @@ public class ZombieAI : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (enemyHealth.health <= 0 || playerTransform == null) return;
 
@@ -84,10 +89,29 @@ public class ZombieAI : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damageAmount);
+                PlaySound();
                 Debug.Log("Zombie attacked player!");
             }
 
             lastAttackTime = Time.time;
+        }
+    }
+
+    void PlaySound()
+    {
+        switch (Random.Range(0,3))
+        {
+            case 0:
+                SoundFXManager.instance.PlaySoundClip(attack1, transform, 1); 
+                break;
+            case 1:
+                SoundFXManager.instance.PlaySoundClip(attack2, transform, 1); 
+                break;
+            case 2:
+                SoundFXManager.instance.PlaySoundClip(attack3, transform, 1); 
+                break;
+            default:
+                break;
         }
     }
 }
