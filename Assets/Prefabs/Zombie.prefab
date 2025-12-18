@@ -94,6 +94,13 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   health: 4
   spawnedFrom: {fileID: 0}
+  zombieHurt1: {fileID: 8300000, guid: 6682acaf65790e1a19697eae25ee1aa2, type: 3}
+  zombieHurt2: {fileID: 8300000, guid: 87a738189371c7429bc5bf2fa0fed07d, type: 3}
+  zombieHurt3: {fileID: 8300000, guid: 92f17cd477c06c982a196f1a92f4b391, type: 3}
+  zombieHurt4: {fileID: 8300000, guid: 075207c6d393c65d3b9d200cd9483830, type: 3}
+  zombieHurt5: {fileID: 8300000, guid: 83a753ee213142a54a69d3c82dc45839, type: 3}
+  zombieHurt6: {fileID: 8300000, guid: 0200426d57522ecabbe0a0cc47820557, type: 3}
+  soundVolume: 1
 --- !u!114 &790622054033010177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +118,9 @@ MonoBehaviour:
   attackRange: 2
   damageAmount: 1
   attackCooldown: 1.5
+  attack1: {fileID: 8300000, guid: 321698a69c98e5d538362e6716ed3d45, type: 3}
+  attack2: {fileID: 8300000, guid: 1ad22757702fbccd6ac6059bbfd8ab37, type: 3}
+  attack3: {fileID: 8300000, guid: 809b1479d2a39941487509e28f2d2e98, type: 3}
 --- !u!136 &6572188006439579722
 CapsuleCollider:
   m_ObjectHideFlags: 0

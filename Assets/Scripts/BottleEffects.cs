@@ -13,6 +13,9 @@ public class BottleEffect : MonoBehaviour
     public GameObject damageUI;
     public GameObject comboUI;
 
+    [Header("Audio")]
+    public AudioClip pickup;
+
     private GunFire gunFire;
     private PlayerHealth playerHealth;
     private ScoreCounter scoreCounter;
@@ -102,6 +105,8 @@ public class BottleEffect : MonoBehaviour
         {
             Bottles bottle = collision.gameObject.GetComponent<Bottles>();
             
+            SoundFXManager.instance.PlaySoundClip(pickup, transform, 1);
+
             switch(bottle.bottleType)
             {
                 case 0:
